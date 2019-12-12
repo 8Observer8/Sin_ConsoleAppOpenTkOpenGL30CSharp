@@ -23,6 +23,8 @@ namespace Sin
             Width = 256;
             Height = 256;
 
+            Console.WriteLine("OpenGL Version: " + GL.GetString(StringName.Version));
+
             _shaderProgram = new ShaderProgram(
                 "Assets/Shaders/VertexShader.glsl",
                 "Assets/Shaders/FragmentShader.glsl");
